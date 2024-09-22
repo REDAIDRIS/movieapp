@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleSignUp = () => {
-    navigate('/home'); 
+    navigate('/Alo'); 
   };
 
   const handleJumpRightIn = () => {
