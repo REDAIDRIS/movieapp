@@ -7,9 +7,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Login from './compenents/Login.jsx'
+import Login from './compenents/Login.jsx';
 import Home from './compenents/Home.jsx';
-import Alo from './compenents/alo.jsx';
+import Alo from './compenents/Alo.jsx';
 
 
 const router = createBrowserRouter([
