@@ -1,0 +1,72 @@
+/* Alo.css */
+.all {
+    display: flex; /* Flex container for layout */
+    transition: margin-left 0.3s ease; /* Smooth transition for AppBar */
+}
+
+.AppBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: relative; 
+    width: 100%;
+    z-index: 1000; /* Ensure the AppBar is always on top */
+    transition: margin-left 0.3s ease; /* Smooth transition when drawer opens */
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    gap: 15px;
+}
+
+.left p {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.left p:hover {
+    color: #ff9800; /* Change to your desired hover color */
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.drawer {
+    background-color: #444;
+    color: white;
+    width: 250px; /* Fixed width for the drawer */
+    height: 100vh; /* Full height */
+    position: absolute; /* Allow it to overlay AppBar */
+    top: 0;
+    left: -270px; /* Initially hidden to the left */
+    transition: left 0.3s ease; /* Smooth transition */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Ensure it appears below the AppBar */
+    padding: 10px;
+}
+
+.drawer.show {
+    left: 0; /* Slide in when open */
+}
+
+.drawer p {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.drawer p:hover {
+    background-color: #555; /* Change to your desired hover color */
+}

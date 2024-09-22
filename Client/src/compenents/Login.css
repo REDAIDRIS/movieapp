@@ -1,0 +1,120 @@
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover ;
+    background:   url("../BG.png") ,linear-gradient(
+        90deg,
+        rgba(97, 0, 194, 1) 0%,
+        rgba(25, 24, 23, 1) 100%
+      );
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+button {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #357ae8;
+}
+
+.item {
+    margin: 10px 0;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin: right 0px;
+}
+
+.sam, .sam2, .sam3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+    
+}
+
+
+
+.ligne{
+    display: flex;
+}
+.sam2 button {
+  
+    
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sam3 button {
+    background-color: transparent;
+    border: none;
+    color:  rgb(97, 0, 194);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sam3 button:hover {
+    text-decoration: none;
+}
